@@ -1,0 +1,90 @@
+.rating
+  height: 100vh
+  margin: auto
+  border: 1px solid black
+  box-sizing: border-box
+
+  &__footer
+    border-top: 1px solid black
+
+  &__list
+    overflow-y: auto
+    overflow-x: hidden
+    height: calc(100vh - 115px)
+
+    &_description
+      display: flex
+      justify-content: space-between
+
+      .description__id
+        margin: 0 25px
+
+      .description__points
+        margin-right: 50px
+
+    & .rating__item
+      border: 1px solid grey
+      margin: 10px
+
+  &__item
+    display: flex
+    justify-content: space-between
+    padding: 10px
+
+    &_position
+      width: 24px
+
+    &_name,
+    &_position,
+    &_points
+      margin: auto 0
+
+    &_name
+      overflow: hidden
+      width: 150px
+      white-space: nowrap
+      text-overflow: ellipsis
+
+    &_photo
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      margin: 0 10px
+
+    &_left
+      display: flex
+      justify-content: flex-start
+
+    &_right
+      display: flex
+
+  &__header
+    display: flex
+    padding: 10px 20px
+    border-bottom: 1px solid black
+
+  &__search
+    display: flex
+    justify-content: flex-end
+    width: 50%
+
+    &_button
+      width: 30px
+      display: flex
+
+      img
+        width: 100%
+        margin: auto
+
+  &__tabs
+    width: 50%
+    display: flex
+    justify-content: flex-start
+
+  &__tab
+    margin: 0 20px 0 0
+    cursor: pointer
+    text-transform: capitalize
+
+    &.active
+      border-bottom: 1px solid black
